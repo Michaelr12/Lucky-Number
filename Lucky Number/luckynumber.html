@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lucky Number</title>
+
+	<link rel="stylesheet" type="text/css" href="lucky.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Lucky Number</h1>
+
+<p>Click for Six Randomly Generated Numbers Between 1 and 100</p>
+
+
+<div>Winning numbers: <span id="message"></span></div>
+
+<button id="button">LOTTO WINNING NUMBERS!</button> <br>
+
+<input type="button" value="New Numbers" onClick="window.location.reload()">
+
+</div>
+
+
+
+
+<script type="text/javascript" src="lucky.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- function lotto(){
+	
+	var a = Math.floor(Math.random() * 100);
+	
+	var b = Math.floor(Math.random() * 100);
+
+	var c = Math.floor(Math.random() * 100);
+	
+	var d = Math.floor(Math.random() * 100);
+
+	var e = Math.floor(Math.random() * 100);
+
+	var f = Math.floor(Math.random() * 100);
+
+
+	if(a !== b && b !== c && c !== d && d !== e && e !== f) {
+	document.write(a + "," + b + "," + c + "," + d + "," + e + "," + f); 
+
+}
+}
+
+
+// var button = document.querySelector("#message");
+
+button.addEventListener("click", function(){
+
+	document.getElementById("#message").innerHTML = lotto();
+}) -->
