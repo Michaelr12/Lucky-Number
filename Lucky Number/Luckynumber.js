@@ -1,18 +1,21 @@
-function lotto(){
-	var numbers = [];
 
-for(var i = 0; i < 6; i++) {
-
-		numbers.push(Math.floor(Math.random(7) * 100));
-		
+function lotto(numbers) {
+	if(numbers.size == 6) {
+		let arr = Array.from(numbers);
+		return arr.join(", ") 
 	}
+	
+	num = Math.floor(Math.random() * 100);
+	
 
-	return (_.uniq(numbers));
+	numbers.add(num);
+	
+	return lotto(numbers);
+}
+
 		
-	}
-
 	var display = document.querySelector("#message");
 
 button.addEventListener("click", function(){
-	display.textContent = lotto();
+	display.textContent = lotto(new Set([]));
 })
